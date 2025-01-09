@@ -249,6 +249,9 @@ int main()
     		cout<<"Min element is: "<<x<<endl;
     		cout<<"Average of the array: "<<c<<endl;
     		break;
+	case 9:
+		cout<<"Exiting"<<endl;
+		break;
     	default:
     		cout<<"Wrong choice entered";
     		break;
