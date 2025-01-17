@@ -108,7 +108,7 @@ int main()
 
 	printf("\n");
 
-	free(first);
+	freeList(first);
 
 	return 0;
 }
