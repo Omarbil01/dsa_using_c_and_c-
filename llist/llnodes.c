@@ -59,6 +59,18 @@ void create(int a[],int n)
 	}
 }
 
+void freeList(struct node *p) {
+    struct node *temp;
+    while (p != NULL) {
+        temp = p;  
+        //pointer temp is pointing towards first node  
+        p = p->next; 
+        //pointer p is pointing towards next node
+        free(temp);  
+        //now all nodes can be correctly deleted
+    }
+}
+
 
 int main()
 {
@@ -75,7 +87,7 @@ int main()
 
 	printf("\n");
 
-	free(first);
+	freeList(first);
 
 	return 0;
 }
