@@ -118,8 +118,6 @@ int main()
 	display(s1);
 	printf("\n");
 
-
-
 	free(s1.a);
 
 	return 0;
