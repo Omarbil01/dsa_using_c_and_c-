@@ -40,6 +40,19 @@ void display(struct node *p)
 	printf("\n");
 }
 
+void freeList(struct node *p)
+{
+	struct node *q;
+
+	while(p != NULL)
+	{
+		q=p;
+		p=p->next;
+		free(q);
+	}
+	first=NULL;
+}
+
 int main()
 {
 	int a[]={10,20,30,40,50};
