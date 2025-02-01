@@ -94,7 +94,7 @@ int main()
 
 	printf("Linked list after reverse: ");
 	display(first);
-	printf("\n");
+	printf("\n\n");
 
 	freeList(first);
 	return 0;
