@@ -67,6 +67,8 @@ int main()
 
 	countsort(a,n);
 
+	printf("After sorting: ");
+	printf("\n");
 	for(i=0;i<n;i++)
 	{
 		printf("%d ",a[i]);
