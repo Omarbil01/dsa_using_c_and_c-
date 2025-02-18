@@ -50,7 +50,6 @@ public:
 		int x=-1;
 		if(front==rear)
 		{
-			//cout<<"Queue is empty"<<endl;
 			return x;
 		}
 		else
