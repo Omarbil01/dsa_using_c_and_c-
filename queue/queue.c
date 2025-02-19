@@ -73,6 +73,8 @@ int main()
 	printf("Dequeue: \n");
 	int x=dequeue(&q);
 	printf("Deleted element: %d\n",x);
+
+	printf("Display after dequeue: \n");
 	display(q);
 	printf("\n");
 	return 0;
