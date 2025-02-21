@@ -71,6 +71,11 @@ int dequeuefirstelement(struct queue *q)
 
 void display(struct queue q)
 {
+	if(q.front == -1)
+	{
+		printf("Queue is empty");
+		return;
+	}
 	for(int i=q.front+1;i<=q.rear;i++)
 	{
 		printf("%d ",q.Q[i]);
