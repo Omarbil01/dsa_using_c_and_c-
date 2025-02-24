@@ -51,11 +51,18 @@ int dequeue(struct queue *q)
 
 void display(struct queue q)
 {
+	if(q.front == q.rear)
+	{
+		printf("Queue is empty");
+	}
+	else
+	{
 	for(int i=q.front+1;i<=q.rear;i++)
 	{
 		printf("%d ",q.Q[i]);
 	}
 	printf("\n");
+	}
 }
 
 int main()
