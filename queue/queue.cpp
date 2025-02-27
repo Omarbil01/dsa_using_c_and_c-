@@ -62,6 +62,10 @@ public:
 
 	void display()
 	{
+		if(front == rear)
+		{
+			cout<<"Queue is empty"<<endl;
+		}
 
 		for(int i=front + 1;i<=rear;i++)
 		{
