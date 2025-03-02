@@ -67,9 +67,9 @@ void inorder(struct node *p)
 {
 	if(p != NULL)
 	{
-		preorder(p->lchild);
+		inorder(p->lchild);
 		printf("%d ",p->data);
-		preorder(p->rchild);
+		inorder(p->rchild);
 	}
 	printf("\n");
 }
@@ -78,8 +78,8 @@ void postorder(struct node *p)
 {
 	if(p != NULL)
 	{
-		preorder(p->lchild);
-		preorder(p->rchild);
+		postorder(p->lchild);
+		postorder(p->rchild);
 		printf("%d ",p->data);
 	}
 	printf("\n");
@@ -93,11 +93,11 @@ int main()
 	preorder(root);
 	printf("\n");
 
-	printf("Preorder traversal: \n");	
+	printf("Inorder traversal: \n");	
 	inorder(root);
 	printf("\n");
 
-	printf("Preorder traversal: \n");	
+	printf("Postorder traversal: \n");	
 	postorder(root);
 	printf("\n");
 
