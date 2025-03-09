@@ -171,10 +171,20 @@ int main()
 	inorder(root);
 	printf("\n");
 
-	delete(root,20);
+	struct node *a=delete(root,20);
+
+	if(a == NULL)
+	{
+		printf("No element deleted\n\n");
+	}
+	else
+	{
+		printf("Element deleted\n\n");
+	}
 
 	printf("After deletion: \n");
 	inorder(root);
 	printf("\n");
+	
 	return 0;
 }
