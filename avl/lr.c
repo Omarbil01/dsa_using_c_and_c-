@@ -153,7 +153,7 @@ int main()
     root = insert(root, 5);
     root = insert(root, 7);
     
-    printf("Inorder traversal of the AVL tree: ");
+    printf("Display: ");
     inorder(root);
     printf("\n");
     
