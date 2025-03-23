@@ -39,7 +39,7 @@ int main()
 	
 	if(n>0 && n <= size)
 	{
-	    int count=0;
+	    int count=0; //forkeeping track of elements in funcrion
 	    for(i=0;i<n;i++)
 	    {
 	        printf("Enter the value to be added: ");
