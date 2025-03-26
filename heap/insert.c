@@ -1,41 +1,33 @@
 #include <stdio.h>
 
-void insert(int a[],int *n,int key)
+void insert(int a[],int n)
 {
-	int i = *n;
-	a[i]=key;
-	(*n)++;
+	int i=n;
+	int temp;
+	temp=a[i];
 
-	while(i>=1 && a[i]>a[(i-1)/2])
+	while(i>1 && temp>a[i/2])
 	{
-		int temp=a[i];
-		a[i]=a[(i-1)/2];
-		a[(i-1)/2]=temp;
-
-		i = (i-1)/2;
+		a[i]=a[i/2];
+		i /= 2;
 	}	
-}
-
-void display(int a[],int n)
-{
-	printf("Max heap: ");
-	for(int i=0;i<n;i++)
-	{
-		printf("%d ",a[i]);
-	}
-	printf("\n");
+	a[i]=temp;
 }
 
 int main()
 {
-	int a[15]={45,35,15,30,10,12};
-	int n=6;
+	int a[]={0,45,35,15,30,10,12,0};
 
-	int key=48;
-	insert(a,&n,key);
+	for(int i=2;i<=6;i++)
+	{
+		insert(a,i);
+	}
 
 	printf("Displaying: \n");
-	display(a,n);
+	for(int i=2;i<=6;i++)
+	{
+		printf("%d ",a[i]);
+	}
 	printf("\n");
 
 	return 0;
