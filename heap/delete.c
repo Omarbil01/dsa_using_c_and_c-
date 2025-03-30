@@ -17,6 +17,7 @@ void insert(int a[],int n)
 int delete(int a[],int n)
 {
     int i,j,x;
+    int temp;
     int val=a[1];
     x=a[n];
     a[1]=a[n];
@@ -25,16 +26,16 @@ int delete(int a[],int n)
     i=1;
     j=2*i;
 
-    while(j<n - 1)
+    while(j<=n - 1)
     {
-        if(a[j+1]>a[j])
+        if(j<n-1 && a[j+1]>a[j])
         {
             j=j+1;
         }
 
         if(a[i]<a[j])
         {
-            int temp=a[i];
+            temp=a[i];
             a[i]=a[j];
             a[j]=temp;
             i=j;
