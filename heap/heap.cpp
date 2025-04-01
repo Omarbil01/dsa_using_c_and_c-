@@ -93,10 +93,9 @@ int main()
 	print(a,n);
 	cout<<endl;
 
-	remove(a,n);
+	x=remove(a,n);
 
-	cout<<"After removing: "<<endl;
-	print(a,n);
+	cout<<"Removed element: "<<x<<endl;
 	cout<<endl;
 
 	return 0;
