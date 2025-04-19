@@ -48,7 +48,7 @@ public:
 		{
 			for(int j=0;j<n;j++)
 			{
-				if(ele[k],i ==i && ele[k].j==j)
+				if(ele[k].i ==i && ele[k].j==j)
 				{
 					cout<<ele[k++].x<<" ";
 				}
