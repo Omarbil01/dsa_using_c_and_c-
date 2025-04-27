@@ -67,6 +67,8 @@ int main()
 	sparse s1(5,5,5);
 	s1.read();
 	s1.display();
+
+	printf("\n");
 	
 	return 0;
 }
