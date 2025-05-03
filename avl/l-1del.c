@@ -227,7 +227,7 @@ int main()
     printf("\n");
 
     root=delete(root,30);
-    printf("AVL tree after L1 deletion: ");
+    printf("AVL tree after L -1 deletion: ");
     inorder(root);
     printf("\n");
     
