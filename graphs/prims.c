@@ -89,6 +89,7 @@ int main()
 		}
 	}
 
+	printf("Minimum cost bertices: \n");
 	for(i=0;i<n-1;i++)
 	{
 		printf("( %d , %d )",t[0][i],t[1][i]);
