@@ -88,6 +88,7 @@ int main()
 		included[k]=1;
 	}
 
+	printf("Minimum cost edges that travel to all edges are: \n");
 	for(i=0;i<vertice-1;i++)
 	{
 		printf("( %d, %d )",t[0][i],t[1][i]);
