@@ -25,7 +25,7 @@ int main()
 		if((x & H) > 0)
 		{
 			//It will print all the duplicate words
-			printf("%c is duplicate\n",a[i]);
+			printf("%c is duplicate character\n",a[i]);
 		}
 
 		else
