@@ -12,6 +12,8 @@ void perm(char s[],int k)
 	{
 		res[k]='\0';
 		printf("%s\n",res);
+		//we have reached the end of the string
+		//we will print all the permutations here
 	}
 	else
 	{
@@ -25,6 +27,11 @@ void perm(char s[],int k)
 				perm(s,k+1);
 				a[i]=0;
 			}
+			//we are using backtracking and using state
+			//space tree. If there are chars in string
+			//left, we will put that in result string.
+			//a array will signify we have visited that
+			//char and to ignore that
 		}
 	}
 }
